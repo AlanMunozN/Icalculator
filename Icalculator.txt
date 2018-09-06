@@ -22,6 +22,7 @@ public class ICalculator {
     System.out.print(calculator.Fibonacci() + "\n");
 
     System.out.println(calculator2.Addition(11));
+    System.out.println(calculator2.Substraction(11));
     
   }
 }
@@ -31,5 +32,7 @@ class Calculator extends ICalculator {
     public int Addition (int number) {
         return number + 1;
     }
-    
+    public int Substraction (int number) {
+        return number - 1;
+    }
 }
