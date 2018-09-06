@@ -1,0 +1,25 @@
+public class ICalculator {
+
+  public String Fibonacci () {
+    String result = "0";
+    for (int i=1; i<10; i++) {
+      result = result + ", " + Integer.toString(CalculateFibonacci(i));
+    }
+    return result;
+  }
+
+  protected int CalculateFibonacci(int value) {
+    if (value < 2)
+      return value;
+    else
+        return CalculateFibonacci(value - 1) + CalculateFibonacci(value - 2);
+  }
+
+  public static void main(String[] args) {
+    ICalculator calculator = new ICalculator();
+    Calculator calculator2 = new Calculator(); 
+    
+    System.out.print(calculator.Fibonacci() + "\n");
+    
+  }
+}
