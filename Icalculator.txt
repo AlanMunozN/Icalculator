@@ -20,6 +20,16 @@ public class ICalculator {
     Calculator calculator2 = new Calculator(); 
     
     System.out.print(calculator.Fibonacci() + "\n");
+
+    System.out.println(calculator2.Addition(11));
     
   }
+}
+
+class Calculator extends ICalculator {
+    
+    public int Addition (int number) {
+        return number + 1;
+    }
+    
 }
